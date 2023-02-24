@@ -25,6 +25,13 @@ curl localhost:8080/albums
         "price": 12.99
     }
 ] 
+
+curl http://localhost:8080/albums \
+    --include \
+    --header "Content-Type: application/json" \
+    --request "POST" \
+    --data '{"id": "4","title": "The Scientist","artist": "Coldplay","price": 10.99}'
+
 ```
 
 Git 
