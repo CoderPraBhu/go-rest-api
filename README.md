@@ -1,4 +1,7 @@
 Reference: https://go.dev/doc/tutorial/web-service-gin
+Gin Web Framework: https://pkg.go.dev/github.com/gin-gonic/gin
+Gin Docs: https://gin-gonic.com/docs/
+
 
 ```
 go mod init coderprabhu.con/go-rest-api
@@ -31,6 +34,14 @@ curl http://localhost:8080/albums \
     --header "Content-Type: application/json" \
     --request "POST" \
     --data '{"id": "4","title": "The Scientist","artist": "Coldplay","price": 10.99}'
+
+curl localhost:8080/albums/2
+{
+    "id": "2",
+    "title": "Legend",
+    "artist": "Bob Marley",
+    "price": 12.99
+} 
 
 ```
 
